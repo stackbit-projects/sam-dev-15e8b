@@ -10,7 +10,7 @@ seo:
       value: website
       keyName: property
     - name: 'og:title'
-      value: Stackbit Fjord Theme
+      value: Sam Holmberg
       keyName: property
     - name: 'og:description'
       value: The preview of the Fjord theme
