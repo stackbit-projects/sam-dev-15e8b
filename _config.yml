@@ -28,7 +28,7 @@ header:
   has_social: true
   social_links:
     - label: Instagram
-      url: 'https://www.instagram.com/'
+      url: 'https://www.instagram.com/sholmberg_/'
       style: icon
       icon_class: instagram
       new_window: true
