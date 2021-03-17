@@ -13,7 +13,7 @@ seo:
       value: Sam Holmberg
       keyName: property
     - name: 'og:description'
-      value: TSoftware Developer and Artist Portfolio
+      value: Software Developer and Artist Portfolio
       keyName: property
     - name: 'og:image'
       value: images/home.jpg
