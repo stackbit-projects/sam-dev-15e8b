@@ -24,7 +24,7 @@ seo:
     - name: 'twitter:title'
       value: Sam Holmberg
     - name: 'twitter:description'
-      value: The preview of the Fjord theme
+      value: Software Developer and Artist Portfolio
     - name: 'twitter:image'
       value: images/home.jpg
       relativeUrl: true
