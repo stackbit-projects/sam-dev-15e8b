@@ -6,7 +6,7 @@ collections:
     permalink: '/posts/:title/'
 palette: yellow
 header:
-  title: Holmberg
+  title: Sam Holmberg
   tagline: >-
     Software Engineer 
     Software Artist
