@@ -78,3 +78,4 @@ exclude:
   - netlify.toml
   - stackbit-build.sh
   - stackbit-pull.js
+domain: 'https://sam-dev-15e8b.netlify.app'
