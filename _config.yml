@@ -6,7 +6,7 @@ collections:
     permalink: '/posts/:title/'
 palette: yellow
 header:
-  title: Fjord
+  title: Holmberg
   tagline: Minimal and clean blog theme
   logo_img: images/logo.svg
   logo_img_alt: Fjord Logo
