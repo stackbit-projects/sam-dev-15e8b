@@ -4,7 +4,7 @@ has_more_link: true
 more_link_text: Keep reading
 seo:
   title: Sam Holmberg
-  description: The preview of the Fjord theme
+  description: Software Developer Portfolio
   extra:
     - name: 'og:type'
       value: website
