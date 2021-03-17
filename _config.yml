@@ -7,7 +7,7 @@ collections:
 palette: yellow
 header:
   title: Holmberg
-  tagline: Minimal and clean blog theme
+  tagline: Software Developer
   logo_img: images/logo.svg
   logo_img_alt: Fjord Logo
   background_img: images/header-bg.jpg
