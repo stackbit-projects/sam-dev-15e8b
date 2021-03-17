@@ -4,7 +4,7 @@ has_more_link: true
 more_link_text: Keep reading
 seo:
   title: Sam Holmberg
-  description: Software Developer Portfolio
+  description: Software Developer and Artist Portfolio
   extra:
     - name: 'og:type'
       value: website
