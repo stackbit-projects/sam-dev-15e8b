@@ -42,11 +42,6 @@ header:
       style: icon
       icon_class: linkedin
       new_window: true
-    - label: DEV
-      url: 'https://dev.to/'
-      style: icon
-      icon_class: dev
-      new_window: true
 footer:
   content: >-
     &copy; Stackbit. All rights reserved. This Jamstack site was created with <a
