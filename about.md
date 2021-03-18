@@ -28,7 +28,6 @@ seo:
     - name: 'twitter:image'
       value: images/about.jpg
       relativeUrl: true
-instagram: BzUQgSGjq1i
 layout: page
 ---
 
@@ -45,7 +44,7 @@ In 2019, Sam got hired as a software engineer at Amazon.com, and relocated to Se
 Now living in the PNW, he can frequently be found hiking, biking, snowboarding, trying new Seattle foods,
 and always seeking a new view of an evening sunset.
 
-{% include insta.html id=page.instagram %} 
+{% include insta.html id="BzUQgSGjq1i" %}
 
 >You need to let the little things that would ordinarily bore you suddenly thrill you. <cite>Andy Warhol</cite>
 
