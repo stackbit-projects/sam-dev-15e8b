@@ -5,9 +5,9 @@ subtitle: >-
 excerpt: >-
   Today I am building a new site with Jekyll and Stackbit. Pretty interesting stuff.
 date: '2021-03-16'
-thumb_img_path: images/p/jekyll.jpg
+thumb_img_path: images/p/portrait.jpg
 thumb_img_alt: Jekyll logo
-content_img_path: images/p/jekyll.jpg
+content_img_path: images/p/portrait.jpg
 seo:
   title: Welcome to the new blog
   description: >-
@@ -40,12 +40,14 @@ seo:
 layout: post
 ---
 
+![Old Website](/images/p/oldwebsite.png)
+
 I'm migrating off of my [old website](https://sam.holmberg.dev/) today, and building a new one to better showcase my
 thought process as I do my fun side projects.
 
 The old website was a fun and beautiful UX design by my friend [Cat Chiang](https://www.linkedin.com/in/cat-chiang/) and my work
-as a web developer brought it to life. I remember having fun writing the JS transitions, and figuring out the mobile
-view vs the desktop view was so complicated that I ended up writing separate views based on the size of your window.
+as a web developer brought it to life. I remember having fun writing the JavaScript transitions, and figuring out the mobile
+view vs the desktop view was so complicated that I ended up writing separate webpages entirely based on the size of your window.
 
 Anyways, I have grown out of that site. It was my pre-work life site, which showcased my work in bulk and didn't
 really have any good ways to write about why I did my work. 
@@ -55,12 +57,16 @@ It's a showcase, and a blog! Still figuring out how I want to format it all, but
 
 <h3>Github Pages</h3>
 
+![Github Pages](https://miro.medium.com/max/4800/1*UBPbXxCACLSygvXutPPGSA.jpeg)
+
 So my last site was [hosted by Github](https://pages.github.com/). Github provides 1 free site to any user account. You
 can only show static webpages (so no backend allowed), but it's perfect for portfolios or simple websites.
 
 I wanted to keep this cheap hosting solution, so I looked around and found a best fit for Github ~ that led me to Jekyll.
 
 <h3>Jekyll Static Website Builder</h3>
+
+![Jekyll](https://miro.medium.com/max/4800/1*B3eU4xOLAB8_BPDh3pExdw.jpeg)
 
 [Jekyll](https://jekyllrb.com/) is amazing as well, because it allows me to write a website up in markup! (which I've gotten very accustomed to
 while writing docs at Amazon). And Jekyll can spin up locally and run on your computer, or be [computed by Github
@@ -81,14 +87,17 @@ Some pretty ones I have to share:
 - [portfolYOU](https://youssefraafatnasry.github.io/portfolYOU/projects/)
   - Simple, beautiful, but easily feels cluttered.
   
-Anyways, I set my hearts desire on Fjord, and so I threw it into jekyll with the [jekyll remote theme](https://github.com/benbalter/jekyll-remote-theme) gem.
-That was a mission on its own, and it was beyond annoying that it just WOULDN'T WORK. Jekyll was able to load the Creative theme,
-but nothing I did was making Fjord work. The [git repo](https://github.com/stackbit/stackbit-theme-fjord) had instructions to set it
+Anyways, I set my hearts desire on Fjord, and so I threw it into Jekyll with the [jekyll remote theme](https://github.com/benbalter/jekyll-remote-theme) gem.
+That was a mission on its own, and it was beyond annoying that it extracted properly but just didn't copy into my rendered site. 
+I kept getting themeless webpages. To troubleshoot, I tried Jekyll with the Creative theme, and it was working fine.
+Nothing I did was making Fjord work. The [git repo](https://github.com/stackbit/stackbit-theme-fjord) had instructions to set it
 up in Stackbit, but I really wanted to move forwards without creating a "Stackbit" account. 
 
 And so... I finally caved and clicked "Create With Stackbit"
 
 <h3>Stackbit</h3>
+
+![Stackbit](https://miro.medium.com/max/2400/0*IpqdWIja-rXS0kXG.png)
 
 I was hesitant at first, I had never heard of Stackbit. Once I associated my Github account it created a new website.
 I immediately thought... oh this is another WordPress, or Drupal, or something, and rolled my eyes. But its not!
@@ -109,4 +118,17 @@ they'll charge me extra one day. We'll see where this leads. But for now, I'm en
 Way easier than css adjustments to align my div boxes manually like I did last time. Who knows, one day I might make a new
 theme and the entire website will move with it.
 
-JK, Stackbit didn't give me permission to my own repo. And their support wasn't as helpful as I thought it would be. So I'm working on a shim.
+**Mar 18 Edit:** Sad, Stackbit setup didn't give me permission to my own repo (I suppose this must be a bug). Their support
+wasn't as helpful as I thought it would be.
+I ended up requesting the entire repo get forked into [a repo fully owned by me](https://github.com/Esaych/sam-dev-15e8b). 
+I also figured out that Stackbit integrates with [Netlify](https://www.netlify.com/) to do the Github deployment heavy lifting,
+so I had to adjust the Netify software application to point to my new repository, and finally to get the web IDE
+that Stackbit has, I needed to create a NEW site referring to my own repo in Stackbit. So now I have a duplicate site.
+ 
+All in all, a workaround which will probably be resolved once Stackbit gets back to me on my support email, but I was impatient.
+
+<style>
+.site-header-bg {
+  background-position: right;
+}
+</style>

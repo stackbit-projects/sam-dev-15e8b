@@ -28,15 +28,24 @@ seo:
     - name: 'twitter:image'
       value: images/about.jpg
       relativeUrl: true
+instagram: BzUQgSGjq1i
 layout: page
 ---
 
-**Sam Holmberg** is a Software Development Engineer. Originating from the DMV area, he graduated from the University of Maryland 
-in 2019 with a degree in Computer Science and a concentration in art. In 2019, Sam relocated to Seattle, WA and now works
-as a software engineer for Amazon.com.
+**Sam Holmberg** is a Software Development Engineer. Originating from the DMV area, and now based in the Seattle area.
+
+Sam Holmberg's interests in code started in 5th grade, 2009. Starting in [Scratch](https://scratch.mit.edu/), to programming TI-84 games, 
+to building Java based [Minecraft server plugins](https://github.com/Esaych/DDCustomPlugin) by the 9th grade. 
+Sam was hired for his first software development internship with E-PAGA Inc. after his freshman year of high school. He worked with E-PAGA 
+and was happy to gain industry experience and impactful solutions all the way until graduating college and leaving the company in 2019.
+
+Sam Holmberg graduated from the University of Maryland in 2019 with a degree in Computer Science and a concentration in art. 
+In 2019, Sam got hired as a software engineer at Amazon.com, and relocated to Seattle, WA.
 
 Now living in the PNW, he can frequently be found hiking, biking, snowboarding, trying new Seattle foods,
 and always seeking a new view of an evening sunset.
+
+{% include insta.html id=page.instagram %} 
 
 >You need to let the little things that would ordinarily bore you suddenly thrill you. <cite>Andy Warhol</cite>
 
