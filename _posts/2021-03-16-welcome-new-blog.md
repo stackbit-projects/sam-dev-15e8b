@@ -109,4 +109,4 @@ they'll charge me extra one day. We'll see where this leads. But for now, I'm en
 Way easier than css adjustments to align my div boxes manually like I did last time. Who knows, one day I might make a new
 theme and the entire website will move with it.
 
-JK, Stackbit didn't give me permission to my own repo. And their support wasn't as helpful as I thought it would be. So I'm wokring o
+JK, Stackbit didn't give me permission to my own repo. And their support wasn't as helpful as I thought it would be. So I'm working on a shim.
