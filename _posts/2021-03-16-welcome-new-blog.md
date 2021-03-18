@@ -42,7 +42,7 @@ layout: post
 
 ![Old Website](/images/p/oldwebsite.png)
 
-I'm migrating off of my [old website](https://sam.holmberg.dev/) today, and building a new one to better showcase my
+I'm migrating off of my [old website](https://esaych.github.io/) today, and building a new one to better showcase my
 thought process as I do my fun side projects.
 
 The old website was a fun and beautiful UX design by my friend [Cat Chiang](https://www.linkedin.com/in/cat-chiang/) and my work
