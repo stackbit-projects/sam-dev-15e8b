@@ -24,7 +24,7 @@ seo:
         Today I am building a new site with Jekyll and Stackbit. Pretty interesting stuff.
       keyName: property
     - name: 'og:image'
-      value: images/10.jpg
+      value: images/p/portrait.jpg
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
