@@ -132,7 +132,6 @@ Now, I had complete control via a python script running on my headless Raspberry
 
 I had working lights and now I wanted to make it meaningful. I had 3 lights so I set up a simple program.
 
-<h5>Weather</h5>
 - The top light was to Seattle - *my current home*
 - The middle light represents Washington, DC - *my original home, and of 2 of my roommates*
 - The bottom light represents Pheonix - *the original home of my third roommate*
@@ -168,6 +167,8 @@ very calming in the evenings.
 ![blue weather](/images/p/np-8.jpg)
 ![purple weather](/images/p/np-8b.jpg)
 
+*sneak peak: I also made the lights synchronize to our sound system, but [that's another post](/posts/music-wood-sculpture/)!*
+
 <style>
 img[alt="stripped clean"] {
   width: 50%;
@@ -180,9 +181,9 @@ img[alt="broken"] {
   padding-right: 10px
 }
 img[alt="initial wiring"] {
-  width: 45%;
+  width: 46.6%;
   float: left;
-  padding-right: 10px;
+  margin-right: 10px;
 }
 img[alt="base wiring"] {
   width: 45%;
@@ -204,7 +205,6 @@ img[alt="blue weather"] {
 }
 img[alt="purple weather"] {
   width: 50%;
-  float: left;
 }
 
 </style>
