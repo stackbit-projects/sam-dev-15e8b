@@ -5,12 +5,14 @@ collections:
   posts:
     permalink: '/posts/:title/'
 palette: blue
+favicon: '/images/favicon.png'
 header:
   title: Sam Holmberg
-  tagline: Software Engineer Software Artist
-  logo_img: images/SAM.PNG
+  tagline: Software Engineer
+  tagline2: Software Artist
+  logo_img: images/logo.png
   logo_img_alt: SH
-  background_img: images/header-bg.jpg
+  background_img: images/home-bg.jpg
   has_nav: true
   nav_links:
     - label: Home
@@ -20,7 +22,7 @@ header:
       url: /about
       style: link
     - label: Projects
-      url: /style-guide
+      url: /projects
       style: link
     - label: Contact
       url: /contact

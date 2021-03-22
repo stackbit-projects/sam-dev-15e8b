@@ -1,6 +1,6 @@
 ---
 title: About Me
-subtitle: This is a short page about me and my work
+subtitle: Hello, nice to meet you!
 img_path: images/about.jpg
 seo:
   title: About Me
@@ -31,12 +31,28 @@ seo:
 layout: page
 ---
 
-**John Doe** is a Senior Art Director from [Stockholm](https://en.wikipedia.org/wiki/Stockholm), Sweden. After graduating from The College of Visual Arts with a degree in Communication Design, he worked for three small graphic design shops where he honed his design style and sensibility.
+I am a Software Development Engineer, and in my free time an artist. I am originally from the DMV area, and now based in the Seattle area.
 
-His work has been recognized by Communication Arts, Print, How, ID, IdN, AIGA, Effie, Archive, Graphis, AdFed and Rockport. Graphic Design USA named him a person to watch in 2019.
+My interests in code started in 5th grade, 2009. Starting in [Scratch](https://scratch.mit.edu/), to programming TI-84 games, 
+to building Java based [Minecraft server plugins](https://github.com/Esaych/DDCustomPlugin) by the 9th grade. 
+I was hired for my first software development internship with E-PAGA Inc. after my freshman year of high school. I worked with E-PAGA 
+and was happy to gain industry experience and impactful solutions all the way until graduating college and leaving the company in 2019.
 
->The world always seems brighter when you’ve just made something that wasn’t there before. <cite>Neil Gaiman</cite>
+I graduated from the University of Maryland in 2019 with a degree in Computer Science and a concentration in art. 
+In 2019, I was hired as a software engineer at Amazon.com and relocated to Seattle, WA.
 
-As a hobby, John Doe authors the most influential design blog in Sweden with over 100,000 page views a month. He lives in Stockholm with his beautiful wife and two boys.
+Now living in the PNW, I frequently am hiking, biking, snowboarding, trying new Seattle foods,
+and always seeking a new view of an evening sunset.
 
-*Thank You for reading!*
+{% include insta.html id="BzUQgSGjq1i" %}
+
+>You need to let the little things that would ordinarily bore you suddenly thrill you. <cite>Andy Warhol</cite>
+
+As a hobby, I love to tinker with Arduinos and Raspberry Pis to find home solutions and create art projects. 
+I also have skills in 3D printing, wood working, and can play the piano pretty decently.
+
+My dream job is to work in a visually creative field of software development. Ideally one which involves art
+displays, human computer interaction or visual effects driven by electronics and programmed software.
+
+If you're interested in reaching out for professional opportunities, or professional advice, connect on [LinkedIn](https://www.linkedin.com/in/samuel-holmberg/),
+or view [my resume directly](https://sam.holmberg.dev/Business%20Resume%202018%20-%20Samuel%20Holmberg.pdf).
