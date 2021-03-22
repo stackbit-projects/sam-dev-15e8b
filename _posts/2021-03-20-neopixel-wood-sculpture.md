@@ -5,9 +5,9 @@ subtitle: >-
 excerpt: >-
   Enhancing my woodworking with interactive smart lights.
 date: '2021-03-20'
-thumb_img_path: images/p/neopixel-cover.png
+thumb_img_path: images/p/neopixel-cover.jpg
 thumb_img_alt: Wood sculpture with neopixels
-content_img_path: images/p/neopixel-cover.png
+content_img_path: images/p/neopixel-cover.jpg
 seo:
   title: Neopixel Wood Sculpture
   description: >-
@@ -24,7 +24,7 @@ seo:
         Enhancing my woodworking with interactive smart lights.
       keyName: property
     - name: 'og:image'
-      value: images/p/neopixel-cover.png
+      value: images/p/neopixel-cover.jpg
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -35,7 +35,7 @@ seo:
       value: >-
         Enhancing my woodworking with interactive smart lights.
     - name: 'twitter:image'
-      value: images/p/neopixel-cover.png
+      value: images/p/neopixel-cover.jpg
       relativeUrl: true
 layout: post
 ---
