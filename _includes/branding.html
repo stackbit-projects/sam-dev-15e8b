@@ -12,6 +12,6 @@
   {% endif %}
   {% assign tagline_is_not_empty = site.header.tagline | is_not_empty %}
   {% if tagline_is_not_empty %}
-  <p class="site-description">{{ site.header.tagline }}</p>
+  <p class="site-description">{{ site.header.tagline }}<br/>{{ site.header.tagline2 }}</p>
   {% endif %}
 </div><!-- .site-branding -->

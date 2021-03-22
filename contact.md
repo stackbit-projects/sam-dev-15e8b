@@ -1,40 +1,10 @@
 ---
 title: Get in Touch
+subtitle: Always interested in new connections! 
 img_path: images/contact.jpg
-form_id: contactForm
-form_action: /success
-form_fields:
-  - input_type: text
-    name: name
-    label: Name
-    default_value: Your name
-    is_required: true
-  - input_type: email
-    name: email
-    label: Email
-    default_value: Your email address
-    is_required: true
-  - input_type: select
-    name: subject
-    label: Subject
-    default_value: Please select
-    options:
-      - Error on the site
-      - Sponsorship
-      - Other
-  - input_type: textarea
-    name: message
-    label: Message
-    default_value: Your message
-  - input_type: checkbox
-    name: consent
-    label: >-
-      I understand that this form is storing my submitted information so I can
-      be contacted.
-submit_label: Send Message
 seo:
   title: Get in Touch
-  description: This is the contact page
+  description: This is my contact page
   extra:
     - name: 'og:type'
       value: website
@@ -58,7 +28,38 @@ seo:
     - name: 'twitter:image'
       value: images/contact.jpg
       relativeUrl: true
-layout: contact
+layout: page
 ---
 
-To get in touch fill the form below.
+Feel free to reach out for professional opportunities, collaboration, fun, or advice for how to start doing what I do!
+
+<table>
+  <tr>
+    <th>Email</th>
+    <td><a href="mailto:sam@holmberg.dev">sam@holmberg.dev</a></td>
+  </tr>
+  <tr>
+    <th>Connect</th>
+    <td><a href="https://www.linkedin.com/in/samuel-holmberg/">linkedin.com/samuel-holmberg</a></td>
+  </tr>
+</table>
+
+![Snowboard with me](/images/getintouch.jpg)
+
+<table>
+  
+  <caption>Other things to check out!</caption>
+  <tr>
+    <th>Github</th>
+    <td><a class="link" href="https://github.com/Esaych">github.com/Esaych</a></td>
+  </tr>
+  <tr>
+    <th>Instagram</th>
+    <td><a class="link" href="https://www.instagram.com/sholmberg_/">sholmberg_</a></td>
+  </tr>
+  <tr>
+    <th>My Blog</th>
+    <td><a class="link" href="http://sam.holmberg.dev">Home</a></td>
+  </tr>
+  
+</table>
