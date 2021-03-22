@@ -98,12 +98,12 @@ to unscrew and replace these parts without having to rewire the entire sculpture
 ![wiring style](/images/p/np-4.jpeg)
 
 I decided to use the wire and stylistically wire it around the piece, and send all the wires into the driving circuit board through
-the base. And underneath I had (naively) put a naked raspberry pi zero w.
+the base. And underneath I had (naively) put a naked Raspberry Pi Zero W.
 
 ![initial wiring](/images/p/np-5.jpeg)
 ![base wiring](/images/p/np-6.jpeg)
 
-I found out a couple problems based on this simple wiring.
+I found out a couple problems based on this simple wiring:
 
 1. Anytime the lights got turned on to 100%, the Raspberry Pi would shut down due to power failure. 
 Turns out Raspberry Pi Zero was not able to output enough power to my lights. I had to power 36 LEDs and the power from the Pi was probably 5V ~1A. 
@@ -119,17 +119,54 @@ So I upgraded to a Pi 3, got a separate power supply, and addressed those wiring
 By this point, I had been fiddling with wires every night for a week and I was definitely fatigued with this entire project. 
 
 I had originally wired all the power, ground, and signal in parallel so I didn't need to worry about a single point of failure
-taking down all the other components, but the Raspberry Pi can only support 1 LED strip at a time, 
-so I had to rewire the 3 lights in series. I ended up doing a hybrid solution with power in parallel and signal in a series. 
+taking down all the other components, but the Raspberry Pi can only support 1 LED strip at a time, which I thought I could
+be clever with code and thwart the restriction, but it ended up the hardware just wasn't able to do support 3 separate LED strips.
+I had to rewire the 3 lights into series, and so now am doing hybrid solution with power in parallel and signal in a series. 
 
-I had managed to accidentally connect two live wires and blow out the LEDs on my top most ring, so I had to shovel out $10
-for a replacement, but since I made it so modular, it was just a 5 minute swap out to get it working again.
+I also managed to accidentally connect two live wires and blow out the LEDs on my top most ring, so I had to shovel out $10
+for a replacement on Amazon, but since I made it so modular, the repair was just a 5 minute swap out to get it working again.
 
-Now, I had complete control via a python script running on my headless Raspberry Pi, and I could write some programs.
+Now, I had complete control via a python script running on my headless Raspberry Pi and I could write some programs.
 
 <h3>Making it pretty</h3>
 
-\<tbd\>
+I had working lights and now I wanted to make it meaningful. I had 3 lights so I set up a simple program.
+
+<h5>Weather</h5>
+- The top light was to Seattle - *my current home*
+- The middle light represents Washington, DC - *my original home, and of 2 of my roommates*
+- The bottom light represents Pheonix - *the original home of my third roommate*
+
+The lights show me the weather of home by showing colors representing the temperature in those 3 cities.
+I pull the weather data from [OpenWeather](https://openweathermap.org/)
+
+- 25F - BLUE <span style="background-color:blue;color:white;">(0,0,255)</span>
+- 40F - CYAN <span style="background-color:cyan;">(0,255,255)</span>
+- 55F - WHITE (255,255,255)
+- 70F - YELLOW <span style="background-color:yellow;">(255,255,0)</span>
+- 90F - RED <span style="background-color:red;color:white;">(255,0,0)</span>
+
+That gave us a nice variation of color such as this:
+<span style="background-color:#00F;">=</span><span style="background-color:#04F;">=</span><span style="background-color:#08F;">=</span><span style="background-color:#0BF;">=</span><span style="background-color:#0FF;">=</span><span style="background-color:#4FF;">=</span><span style="background-color:#8FF;">=</span><span style="background-color:#BFF;">=</span><span style="background-color:#FFF;">=</span><span style="background-color:#FFB;">=</span><span style="background-color:#FF8;">=</span><span style="background-color:#FF4;">=</span><span style="background-color:#FF0;">=</span><span style="background-color:#FB0;">=</span><span style="background-color:#F80;">=</span><span style="background-color:#F40;">=</span><span style="background-color:#F00;">=</span>
+
+Then I also mapped the color of the sky to various visual indicators. Since the API provides [icon weather indicators](https://openweathermap.org/weather-conditions)
+I decided it'd be best to map these icons to colors.
+
+Some of the icons included:
+- 'clear sky': <span style="background-color:rgb(255,255,40)">[255,255,40]</span>
+- 'scattered clouds': <span style="background-color:rgb(128,155,155)">[128,155,155]
+- 'rain': <span style="background-color:rgb(0,10,224)">[0,10,224]</span>
+- 'thunderstorm': <span style="background-color:rgb(255,121,0)">[255,121,0]</span>
+
+And one that I felt helped me know when my family was end their day: 
+- 'sunset' or 'night': <span style="background-color:rgb(70,0,132)">[70,0,132]</span> 
+
+Given these two settings, I just let them fade between the two colors (temperature, and sky condition) every 30 seconds with a
+very gradual 10 second transition. It's now the default state of my sculpture now, and I think the purple of the night is
+very calming in the evenings.
+
+![blue weather](/images/p/np-8.jpg)
+![purple weather](/images/p/np-8b.jpg)
 
 <style>
 img[alt="stripped clean"] {
@@ -160,6 +197,14 @@ img[alt="wiring guide"] {
 }
 img[alt="new wiring"] {
   width: 65%;
+}
+img[alt="blue weather"] {
+  width: 50%;
+  float: left;
+}
+img[alt="purple weather"] {
+  width: 50%;
+  float: left;
 }
 
 </style>
