@@ -1,12 +1,14 @@
 ---
-title: Visualized house sound on my wooden sculpture
+title: Visualized Music on my Wood Sculpture
 subtitle: >-
-  Making pretty visualizations of music from our house sound system on my abstract wooden sculpture.
+  I finished building my electronic wooden sculpture, and I set up a wifi synchronized 
+  sound system in my house, so it only made sense to combine the two!
 excerpt: >-
-  Making pretty visualizations of music from our house sound system on my abstract wooden sculpture.
+  I finished building my electronic wooden sculpture, and I set up a wifi synchronized 
+  sound system in my house, so it only made sense to combine the two!
 date: '2021-03-21'
 thumb_img_path: images/p/npm/music-cover.gif
-thumb_img_alt: Visualized house sound on my wooden sculpture
+thumb_img_alt: Visualized Music on my Wood Sculpture
 content_img_path: images/p/npm/pic1.jpg
 carousel:
   images: 
@@ -18,9 +20,10 @@ carousel:
     - image: /images/p/npm/pic7.jpg
     - image: /images/p/npm/pic8.jpg
 seo:
-  title: Visualized house sound on my wooden sculpture
+  title: Visualized Music on my Wood Sculpture
   description: >-
-    Making pretty visualizations of music from our house sound system on my abstract wooden sculpture.
+    I finished building my electronic wooden sculpture, and I set up a wifi synchronized 
+    sound system in my house, so it only made sense to combine the two!
   extra:
     - name: 'og:type'
       value: article
@@ -30,7 +33,8 @@ seo:
       keyName: property
     - name: 'og:description'
       value: >-
-        Making pretty visualizations of music from our house sound system on my abstract wooden sculpture.
+        I finished building my electronic wooden sculpture, and I set up a wifi synchronized 
+        sound system in my house, so it only made sense to combine the two!
       keyName: property
     - name: 'og:image'
       value: images/p/np-music-cover.jpg
@@ -42,19 +46,20 @@ seo:
       value: Visualized house sound on my wooden sculpture
     - name: 'twitter:description'
       value: >-
-        Making pretty visualizations of music from our house sound system on my abstract wooden sculpture.
+        I finished building my electronic wooden sculpture, and I set up a wifi synchronized 
+        sound system in my house, so it only made sense to combine the two!
     - name: 'twitter:image'
       value: images/p/npm/music-cover.jpg
       relativeUrl: true
 layout: post
 ---
 
-I finished building my [electronic wooden sculpture](/posts/neopixel-wood-sculpture/), and I set up a wifi synchronized 
-sound system in my house, so it only made sense to combine the two!
-
 {% include youtube.html id="kpbXMeKzsoM" %}
 
-The system works by integrating SnapCast, C.A.V.A., and the NeoPixel library, all running on Raspberry Pis.
+If you haven't already, checkout how I made my [electronic wooden sculpture](/posts/neopixel-wood-sculpture/), and how I set up a wifi synchronized 
+  sound system in my house!
+
+The way I got this music visualization working was by integrating SnapCast, C.A.V.A., and the NeoPixel library, all running on Raspberry Pi 3s.
 
 ![system diagram](/images/p/npm/sys-diagram.png)
 
@@ -122,12 +127,12 @@ tell the sculpture that music was playing and it needs to switch. To do this, I 
 <h5>Different Color Maps</h5>
  
 I wanted to make it change color maps when it got to a different song. The best solution which made sense was to use
-Raspotify's "TRACK_ID" value, which is spotify's track id. I would have to use Spotify's developer API to get the track
+Raspotify's "TRACK_ID" value, which is Spotify's track id. I would have to use Spotify's developer API to get the track
 name and details, but the ID was all I needed. [I hashed the ID](https://github.com/Esaych/neopixel-server/blob/main/server.py#L139) 
-to get a (basically) random number per ID, and then
+to get an integer translation of the track id, and then
 used that number with a modulus function to [pick a color map](https://github.com/Esaych/neopixel-server/blob/main/music.py#L76) from an array.
 
-Now we had songs map to their very own color map out of the 7 I handpicked. It was great seeing new colors every song. 
+Now we had songs play and translate to their very own color mapping out of the color maps I handpicked. It was great seeing new colors every song. 
 
 <h3>Result</h3>
 
