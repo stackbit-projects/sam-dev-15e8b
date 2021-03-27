@@ -52,7 +52,7 @@ layout: post
 I finished building my [electronic wooden sculpture](/posts/neopixel-wood-sculpture/), and I set up a wifi synchronized 
 sound system in my house, so it only made sense to combine the two!
 
-
+{% include youtube.html id="kpbXMeKzsoM" %}
 
 The system works by integrating SnapCast, C.A.V.A., and the NeoPixel library, all running on Raspberry Pis.
 
@@ -107,6 +107,27 @@ on separate circuits and separate signal cables, but I had to go back and adjust
 done in parallel (due to Raspberry Pi hardware limitations). This let me send a single signal down the line which 
 was designed for a strip of 36 LEDs. The base ring would read the first 12 channels of data and forward 24 channels to the second ring. 
 The second ring would read 12 more, and forward the last 12 to the highest ring. This let me treat the entire sculpture like 1 LED strip.
+
+<h3>Extras</h3>
+
+<h5>Play/Pause detection</h5>
+
+Now I had a music program and a weather program on the sculpture, in order to make the two interact, I needed a way to
+tell the sculpture that music was playing and it needs to switch. To do this, I used [Raspotify's --onevent flag](https://github.com/librespot-org/librespot/discussions/639)
+ to trigger a python script which would make a get call to a flask service which controls the sculpture's mode.
+ 
+ [The script I wrote](https://github.com/Esaych/neopixel-server/blob/main/snapserver/spotifyEvent.py) sends commands
+ to change to the music mode on "playing" and change to weather on "paused". 
+ 
+<h5>Different Color Maps</h5>
+ 
+I wanted to make it change color maps when it got to a different song. The best solution which made sense was to use
+Raspotify's "TRACK_ID" value, which is spotify's track id. I would have to use Spotify's developer API to get the track
+name and details, but the ID was all I needed. [I hashed the ID](https://github.com/Esaych/neopixel-server/blob/main/server.py#L139) 
+to get a (basically) random number per ID, and then
+used that number with a modulus function to [pick a color map](https://github.com/Esaych/neopixel-server/blob/main/music.py#L76) from an array.
+
+Now we had songs map to their very own color map out of the 7 I handpicked. It was great seeing new colors every song. 
 
 <h3>Result</h3>
 
