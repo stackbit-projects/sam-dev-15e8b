@@ -16,7 +16,7 @@ seo:
       value: Software Developer and Artist Portfolio
       keyName: property
     - name: 'og:image'
-      value: images/home.jpg
+      value: images/home-bg.jpg
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -26,7 +26,7 @@ seo:
     - name: 'twitter:description'
       value: Software Developer and Artist Portfolio
     - name: 'twitter:image'
-      value: images/home.jpg
+      value: images/home-bg.jpg
       relativeUrl: true
 layout: home
 ---

@@ -7,7 +7,16 @@ excerpt: >-
 date: '2021-03-20'
 thumb_img_path: images/p/neopixel-cover.jpg
 thumb_img_alt: Wood sculpture with neopixels
-content_img_path: images/p/neopixel-cover.jpg
+content_img_path: images/p/npm/pic1.jpg
+carousel:
+  images: 
+    - image: /images/p/npm/pic4.jpg
+    - image: /images/p/npm/pic2.jpg
+    - image: /images/p/npm/pic3.jpg
+    - image: /images/p/npm/pic5.jpg
+    - image: /images/p/npm/pic6.jpg
+    - image: /images/p/npm/pic7.jpg
+    - image: /images/p/npm/pic8.jpg
 seo:
   title: Neopixel Wood Sculpture
   description: >-
@@ -40,14 +49,15 @@ seo:
 layout: post
 ---
 
+{% include carousel.html height="50" unit="%" duration="10" %}
+
 I masterminded a crazy final art project for my wood working class at UMD in 2019. I was assigned a task: 
-*Build a beautiful piece of wood working as a symbol of ourselves, it must be mixed media, and...*
 
->it must be taller than you. <cite>Professor Foon Sham</cite>
+>Build a beautiful piece of wood working as a self portrait. It must be mixed media, and it must be taller than you. <cite>Professor Foon Sham</cite>
 
-So my mind was creative, but for some reason I only envisioned an art piece that was tall, but not big.
+For some reason I only envisioned an art piece that was tall, but not big (Unlike my classmates who went big in every direction).
 I made a plan to integrate my piece with LEDs, an Arduino, and a PIR sensor. It was going to be blue when nobody
-was nearby, but then transition to red when people walked by. This was to reflect my own energy as I am an
+was nearby, but then transition to red when people were detected nearby. This was to reflect my own energy as I am an
 extreme extrovert and the bright red is my energy as I am approached by new people.
 
 This is what I came up with by the end of the course:
@@ -55,21 +65,22 @@ This is what I came up with by the end of the course:
 ![2019 art piece](/images/p/neopixel-original.gif)
 
 I was disappointed. I had missed some key things:
-1. The PIR sensor only worked once. I gave up trying to get it working so I just made it work on a basic color loop.
-2. The wood was unfinished, no coating, just plywood.
-3. The sculpture had 5 embedded LEDs, but the wiring only worked with 2.
-4. The power draw of the LEDs was too high and the wires were too thin to carry the power.
-5. My soldering was terrible, I didn't test the product before, so an entire chain of lights was unresponsive.
+1. **The interaction was inconsistently.** I gave up trying to get the PIR sensor working so I just made it work on a basic color loop.
+2. **The wood was unfinished.** No coating, just plywood.
+3. **40% of my LEDs didn't work!** The sculpture had 5 embedded LED rings, but my poor soldering only enabled 2.
+4. **The power draw of the LEDs was too high.** My wires which were too thin to carry the power.
+5. **My soldering was terrible.** The entire thing was haphazardly constructed, so when an entire chain of lights was unresponsive, I couldn't easily fix it without
+tearing out all the wiring.
 
 I worked 10 hours the day before it was due, and the last minute effort to get it working left me with sad results.
-I just kept it as a todo item. One day I would finish it and bring it glory.
+I just left this as a bucket list item: One day I would finish it and bring it glory.
 
 *fast-forward -> 2020 pandemic happens, time to finish this...*
 
 <h3>Cleaning up my wood work</h3>
 
 I had successfully moved this sculpture from my college dorm in Maryland to my house in Seattle. To get started I ripped
-off all the old neopixels and the wires.
+off all the old NeoPixels and the wires.
 
 ![stripped clean](/images/p/np-1.jpeg)
 
@@ -83,7 +94,7 @@ match some paint colors and *correct* the coloring of the putty. All in all, I w
 
 <h3>Embedding electronics</h3>
 
-It was time to get to wiring. I originally had 5 neopixels, but I did tests and found that not all 5 LED rings worked.
+It was time to get to wiring. I originally had 5 [Adafruit NeoPixels](https://www.amazon.com/dp/B00KAE3R1U/), but I did tests and found that not all 5 LED rings worked.
 Notice how some LEDs got skipped in my tests? I think maybe during my soldering I fried some LEDs. Who knows.
 
 Eventually I made good solder points and I got 3 neopixels I knew were going to work. So I set out to use 3 in the sculpture.
@@ -92,21 +103,21 @@ Eventually I made good solder points and I got 3 neopixels I knew were going to 
 ![working](/images/p/np-3-working.gif)
 
 I 3D printed mounts for the LED rings, and setup a design which let me easily connect power, ground, and signal by wrapping
-bare wire around screws, and tightening those screws to get a solid electrical signal. If anything broke in the future, I'd be able
-to unscrew and replace these parts without having to rewire the entire sculpture.
+bare wire around screws. Tightening those screws got a solid electrical signal, but kept the design modular. 
+If anything broke in the future, I'd be able to unscrew and replace these parts without having to rewire the entire sculpture.
 
 ![wiring style](/images/p/np-4.jpeg)
 
 I decided to use the wire and stylistically wire it around the piece, and send all the wires into the driving circuit board through
-the base. And underneath I had (naively) put a naked Raspberry Pi Zero W.
+the base. Underneath I had (naively) put a naked Raspberry Pi Zero W.
 
 ![initial wiring](/images/p/np-5.jpeg)
 ![base wiring](/images/p/np-6.jpeg)
 
 I found out a couple problems based on this simple wiring:
 
-1. Anytime the lights got turned on to 100%, the Raspberry Pi would shut down due to power failure. 
-Turns out Raspberry Pi Zero was not able to output enough power to my lights. I had to power 36 LEDs and the power from the Pi was probably 5V ~1A. 
+1. Anytime the lights got turned on to 100% brightness, the Raspberry Pi would shut down due to power failure. 
+Turns out Raspberry Pi Zero was not able to output enough power to my lights. I had to power 36 LEDs, but the power from the Pi was probably 5V ~1A. (Not enough)
 2. The lights only worked around 50% of the time. Signal was muddy. Turned out the power draw from the lights would create noise
 on the signal line and mess up the commands sent from my python scripts to the NeoPixels.
 3. The Pi Zero was too slow for processing more complicated NeoPixel commands.
@@ -121,12 +132,12 @@ By this point, I had been fiddling with wires every night for a week and I was d
 I had originally wired all the power, ground, and signal in parallel so I didn't need to worry about a single point of failure
 taking down all the other components, but the Raspberry Pi can only support 1 LED strip at a time, which I thought I could
 be clever with code and thwart the restriction, but it ended up the hardware just wasn't able to do support 3 separate LED strips.
-I had to rewire the 3 lights into series, and so now am doing hybrid solution with power in parallel and signal in a series. 
+I had to rewire the 3 lights into series, and so now I'm doing a hybrid solution with power in parallel and signal in a series. 
 
 I also managed to accidentally connect two live wires and blow out the LEDs on my top most ring, so I had to shovel out $10
 for a replacement on Amazon, but since I made it so modular, the repair was just a 5 minute swap out to get it working again.
 
-Now, I had complete control via a python script running on my headless Raspberry Pi and I could write some programs.
+Now, I had complete control via a python script running on my headless Raspberry Pi and I can write some programs!
 
 <h3>Making it pretty</h3>
 
