@@ -65,11 +65,11 @@ This is what I came up with by the end of the course:
 ![2019 art piece](/images/p/neopixel-original.gif)
 
 I was disappointed. I had missed some key things:
-1. **The interaction was inconsistently.** I gave up trying to get the PIR sensor working so I just made it work on a basic color loop.
+1. **The interaction was inconsistent.** I gave up trying to get the PIR sensor working so I just made it work on a basic color loop.
 2. **The wood was unfinished.** No coating, just plywood.
 3. **40% of my LEDs didn't work!** The sculpture had 5 embedded LED rings, but my poor soldering only enabled 2.
 4. **The power draw of the LEDs was too high.** My wires which were too thin to carry the power.
-5. **My soldering was terrible.** The entire thing was haphazardly constructed, so when an entire chain of lights was unresponsive, I couldn't easily fix it without
+5. **My soldering was terrible.** The entire thing was haphazardly constructed. When the entire chain of lights was unresponsive, I couldn't easily fix it without
 tearing out all the wiring.
 
 I worked 10 hours the day before it was due, and the last minute effort to get it working left me with sad results.

@@ -93,13 +93,13 @@ bar heights are at 0. 255;0;0 for really loud frequency in the bass, and 0:0:255
 
 Then I got to work writing [a python program](https://github.com/Esaych/neopixel-server/blob/main/music.py) to read these 
 bar data from the file pipe, and then used the [matplotlib cmap function](https://matplotlib.org/stable/gallery/color/colormap_reference.html)
-to convert a # on a range from 0 to 255 to a color from #000000 to #FFFFFF. And matplotlib let you
+to convert a # on a range from 0 to 255 to a color from #000000 to #FFFFFF. And matplotlib lets you
 do that in many many different ways.
 
 So all I had to do was set a cool color range (we started with inferno), translate those into red green blue channels
  and then send those commands down the line to the LEDs!
  
-Crediting my roommate [Robert Morrison](https://www.linkedin.com/in/robmorr/) for helping me find matplotlib cmap 
+Crediting my roommate [Robert Morrison](https://www.linkedin.com/in/robmorr/) for helping me find matplotlib cmap and for 
 helping me write this bar height to color python script.
 
 ![Color Map](/images/p/npm/colormap.png)
