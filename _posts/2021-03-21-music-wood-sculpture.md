@@ -1,10 +1,10 @@
 ---
 title: Visualized Music on my Wood Sculpture
 subtitle: >-
-  I finished building my electronic wooden sculpture, and I set up a wifi synchronized 
+  I finished building my electronic wooden sculpture, and I set up a wifi synchronized
   sound system in my house, so it only made sense to combine the two!
 excerpt: >-
-  I finished building my electronic wooden sculpture, and I set up a wifi synchronized 
+  I finished building my electronic wooden sculpture, and I set up a wifi synchronized
   sound system in my house, so it only made sense to combine the two!
 date: '2021-03-21'
 thumb_img_path: images/p/npm/music-cover.gif
@@ -22,7 +22,7 @@ carousel:
 seo:
   title: Visualized Music on my Wood Sculpture
   description: >-
-    I finished building my electronic wooden sculpture, and I set up a wifi synchronized 
+    I finished building my electronic wooden sculpture, and I set up a wifi synchronized
     sound system in my house, so it only made sense to combine the two!
   extra:
     - name: 'og:type'
@@ -33,7 +33,7 @@ seo:
       keyName: property
     - name: 'og:description'
       value: >-
-        I finished building my electronic wooden sculpture, and I set up a wifi synchronized 
+        I finished building my electronic wooden sculpture, and I set up a wifi synchronized
         sound system in my house, so it only made sense to combine the two!
       keyName: property
     - name: 'og:image'
@@ -46,7 +46,7 @@ seo:
       value: Visualized house sound on my wooden sculpture
     - name: 'twitter:description'
       value: >-
-        I finished building my electronic wooden sculpture, and I set up a wifi synchronized 
+        I finished building my electronic wooden sculpture, and I set up a wifi synchronized
         sound system in my house, so it only made sense to combine the two!
     - name: 'twitter:image'
       value: images/p/npm/music-cover.jpg
