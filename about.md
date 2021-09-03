@@ -55,4 +55,4 @@ My dream job is to work in a visually creative field of software development. Id
 displays, human computer interaction or visual effects driven by electronics and programmed software.
 
 If you're interested in reaching out for professional opportunities, or professional advice, connect on [LinkedIn](https://www.linkedin.com/in/samuel-holmberg/),
-or view [my resume directly](https://sam.holmberg.dev/Business%20Resume%202018%20-%20Samuel%20Holmberg.pdf).
+or view [my resume directly](https://sam.holmberg.dev/resume/Sam_Holmberg.pdf).
