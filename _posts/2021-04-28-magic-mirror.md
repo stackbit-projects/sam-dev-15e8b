@@ -1,5 +1,5 @@
 ---
-title: Building a magic mirror
+title: Building a Magic Mirror
 subtitle: >-
   Constructing a one way mirror with my old laptop screen
    for a daily dashboard and a fun message from friends!
@@ -11,7 +11,7 @@ thumb_img_path: images/p/mm/mirror-top.jpeg
 thumb_img_alt: Building a magic mirror
 content_img_path: images/p/mm/mirror.jpeg
 seo:
-  title: Building a magic mirror
+  title: Building a Magic Mirror
   description: >-
     Constructing a one way mirror with my old laptop screen
        for a daily dashboard and a fun message from friends!
@@ -20,7 +20,7 @@ seo:
       value: article
       keyName: property
     - name: 'og:title'
-      value: Building a magic mirror
+      value: Building a Magic Mirror
       keyName: property
     - name: 'og:description'
       value: >-
