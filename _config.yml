@@ -15,8 +15,11 @@ header:
   background_img: images/home-bg.jpg
   has_nav: true
   nav_links:
-    - label: Home
+    - label: Blog
       url: /
+      style: link
+    - label: Resume
+      url: /resume
       style: link
     - label: About
       url: /about

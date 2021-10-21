@@ -1,7 +1,7 @@
 ---
 title: Projects
 subtitle: A small collection of software projects developed during my college and high school, and some middle school days.
-img_path: images/projects.jpg
+img_path: images/p/np-8.jpg
 layout: page
 ---
 
@@ -33,8 +33,6 @@ Data processing and visualization with [p5.js](https://p5js.org/)
 
 <i class="fas fa-award"></i> Winner - HackPSU Overall - Tech <br />
 <i class="fas fa-award"></i> Winner - Booz Allen Hamilton - Best Machine Learning Hack
-
-Data processing and visualization with [p5.js](https://p5js.org/) 
 
 <i class="fa fa-link"></i> [Project Writeup](https://devpost.com/software/trigger-happy)
 </td>
